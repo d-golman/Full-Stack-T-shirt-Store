@@ -1,0 +1,53 @@
+.cart
+    display: grid
+    grid-template-columns: repeat(2,400px)
+    grid-gap: 60px
+    @media screen and ( max-width: 900px )
+        display: flex
+        flex-direction: column
+    .cart-data        
+        width: 100%
+        padding: 15px
+        h2
+            text-align: center
+            font-size: 30px
+    .calculation
+        margin-top: 15px
+        ul
+            list-style: none
+            li
+                font-size: 20px
+    
+    .cart-card
+        width: 100% 
+        display: flex
+        flex-direction: row
+        margin-top: 15px
+        border-radius: 3px
+        background: #F6F6F6
+        padding: 5px
+        &-image
+            width: 110px
+            height: 110px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: top
+                border-radius: 3px
+        &-body
+            flex: 1
+            padding: 10px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            h3
+                font-size: 22px
+            p
+                font-size: 20px
+            .btn
+                padding: 5px
+            *
+                width: 100%
+    .user-data
+        width: 100%

@@ -1,0 +1,25 @@
+.profile
+    display: grid
+    grid-template-columns: repeat(2,400px)
+    grid-gap: 60px
+    @media screen and ( max-width: 900px )
+        display: flex
+        flex-direction: column
+    &-orders
+        width: 100%
+        padding: 15px       
+        h2
+            text-align: center
+            font-size: 30px
+.order-card
+    background: #f6f6f6
+    margin-top: 15px
+    border-radius: 3px
+    padding: 10px            
+    &>*:nth-child(1n +2)
+        margin-top: 5px
+    .btn           
+        width: 100%     
+        padding: 5px
+    ul
+        padding-left: 20px

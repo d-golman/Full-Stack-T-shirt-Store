@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "*"
+django = "*"
+django-cors-headers = "*"
+djangorestframework = "*"
+pillow = "*"
+yookassa = "*"
+django-sslserver = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

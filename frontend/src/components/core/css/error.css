@@ -1,0 +1,11 @@
+.error-block {
+  margin: auto;
+  text-align: center;
+}
+.error-block h2 {
+  margin-bottom: 30px;
+}
+.error-block .btn {
+  margin: auto;
+  width: 300px;
+}

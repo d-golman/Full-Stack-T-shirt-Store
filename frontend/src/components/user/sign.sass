@@ -1,0 +1,26 @@
+.sign-form
+    width: 400px
+    margin: auto
+    display: flex
+    flex-direction: column
+    padding: 15px
+    h2
+        text-align: center
+        font-size: 30px
+    *
+        width: 100%
+    &>*:nth-child(1n +3)
+        margin-top: 15px
+    label
+        font-size: 14px
+        padding: 2px
+    .form-control
+        font-size: 15px
+        border: none
+        border-radius: 3px
+        background: #E6E6E6
+        padding: 13px
+        &.alert
+            background: lightpink
+    @media screen and ( max-width: 500px  )
+        width: 300px
