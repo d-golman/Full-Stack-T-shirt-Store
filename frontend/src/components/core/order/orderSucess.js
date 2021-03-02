@@ -6,16 +6,22 @@ import { setError } from '../../../services/store/actions'
 import './order.sass'
 function OrderSucess({match, history, setError}) {
     const id = match.params.id
+    let redirect 
 
     useEffect(()=>{
         orderPayment(id)
-        .then(()=>
-            setTimeout(()=>{
-                history.push('/user/dashboard/')
-            },5000)
+        .then(()=>{
+            redirect = setTimeout(()=>{
+                history.push('/user/profile/')
+            },3000)
+        }
         )
         .catch(()=>setError(true))
-    })
+        return(()=>{
+            clearTimeout(redirect)
+        })
+    }
+    )
 
     return (
         <Base>

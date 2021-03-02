@@ -46,7 +46,7 @@ def add(request,  token):
         total_product = len(raw_products)
         address = data['address']
         id = uuid.uuid4()
-        payment_data = create_link(amount, 'localhost:3000/order/success/{0}/'.format(id), str(raw_products))
+        payment_data = create_link(amount, 'localhost/order/success/{0}/'.format(id), str(raw_products))
         link = payment_data['confirmation']['confirmation_url']
         transaction_id = payment_data['id']
         UserModel = get_user_model()
